@@ -32,6 +32,20 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 
 `install.ps1` 会把 `skills/` 下六个技能与 `tools/` 安装到 Codex 技能目录；覆盖或卸载前会把旧文件备份到 `~/.codex/.cumcm-workflow-backups/<时间戳>/`，不会直接删除。
 
+### 方式三：Hermes 技能库
+
+用 Hermes（而非 Codex）时，六个技能已移植为 Hermes 版，装在 `~/AppData/Local/hermes/skills/research/` 下，
+被 `skill_view` / `skills_list` 原生加载。两个中文名技能按 Hermes 命名要求（ASCII）重命名：
+`数学模型建立` → `cumcm-model-build`、`数学模型评价` → `cumcm-model-review`；正文逻辑与
+`数学模型评价` 报告文件夹名均未改动。
+
+```bash
+python hermes-port/port_to_hermes.py   # 幂等重跑，从 skills/ 重新生成 Hermes 版
+python hermes-port/verify_port.py      # 校验 frontmatter 与残留引用
+```
+
+frontmatter 字段对照、改动清单、`platforms` 审计依据与验证证据见 [`hermes-port/README.md`](hermes-port/README.md)。
+
 ## 包含的六个技能
 
 | 目录 | 角色 |
