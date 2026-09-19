@@ -25,7 +25,7 @@
 ### 方式二：从源码安装
 
 ```powershell
-git clone https://github.com/star1342354/-.git
+git clone https://github.com/star1342354/cumcm-pipeline.git
 cd -
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
