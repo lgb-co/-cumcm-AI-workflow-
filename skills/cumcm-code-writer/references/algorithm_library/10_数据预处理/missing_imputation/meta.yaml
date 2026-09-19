@@ -1,0 +1,17 @@
+id: missing_imputation
+name_zh: 缺失值插补
+category: 10_数据预处理
+problem_types: 数据完整性修复
+family: 数据预处理
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, pandas]
+matlab_toolboxes: [base]
+assumptions: 需说明缺失机制
+pitfalls: 大批量缺失仍插补且不评估影响
+source: 自写重写;参照 算法写作模板 04 培训资料
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,17 @@
+id: polynomial_fit
+name_zh: 多项式拟合
+category: 03_预测时序
+problem_types: 趋势拟合与插值建模
+family: 统计回归
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 阶数低于样本数且需报告过拟合风险
+pitfalls: 阶数越高越好且外推无警告
+source: 自写重写;本地参照 02 源代码 拟合类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,17 @@
+id: cubic_spline_interpolation
+name_zh: 三次样条插值
+category: 10_数据预处理
+problem_types: 平滑曲线重建
+family: 数据预处理
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [base]
+assumptions: 需设定边界条件
+pitfalls: 外推区间不说明
+source: 自写重写;本地参照 02 源代码 插值类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

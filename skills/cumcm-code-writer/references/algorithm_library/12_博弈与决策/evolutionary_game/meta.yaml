@@ -1,0 +1,17 @@
+id: evolutionary_game
+name_zh: 演化博弈复制动态
+category: 12_博弈与决策
+problem_types: 策略演化与稳定策略
+family: 博弈论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [base]
+assumptions: 需给出收益矩阵与初始占比
+pitfalls: 不做稳定性分析只看轨迹
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

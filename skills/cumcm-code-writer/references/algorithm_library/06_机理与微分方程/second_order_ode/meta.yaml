@@ -1,0 +1,17 @@
+id: second_order_ode
+name_zh: 二阶微分方程阻尼振动
+category: 06_机理与微分方程
+problem_types: 振动与阻尼系统
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [base]
+assumptions: 需给出初值与系数物理意义
+pitfalls: 不做量纲检查或步长过大失真
+source: 自写重写;本地参照 02 源代码 微分方程
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

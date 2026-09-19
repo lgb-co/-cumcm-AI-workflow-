@@ -1,0 +1,17 @@
+id: mann_kendall_trend
+name_zh: Mann-Kendall趋势检验
+category: 08_统计检验
+problem_types: 序列趋势显著性
+family: 统计检验
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: []
+assumptions: 需处理并列值并考虑自相关
+pitfalls: 忽略自相关导致假显著
+source: 自写重写;本地参照 02 源代码 时间序列类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

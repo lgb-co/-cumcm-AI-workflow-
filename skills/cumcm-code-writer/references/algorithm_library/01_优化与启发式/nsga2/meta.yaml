@@ -1,0 +1,17 @@
+id: nsga2
+name_zh: NSGA-II 多目标优化
+category: 01_优化与启发式
+problem_types: 多目标权衡/Pareto前沿
+family: 多目标进化算法
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 目标间存在冲突且可同时评价
+pitfalls: 把加权和当多目标或不报告Pareto解集
+source: 自写重写;参照 14种国赛必备算法 NSGA-II
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

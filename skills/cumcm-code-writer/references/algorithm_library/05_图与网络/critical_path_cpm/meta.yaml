@@ -1,0 +1,17 @@
+id: critical_path_cpm
+name_zh: 关键路径CPM
+category: 05_图与网络
+problem_types: 项目工期与关键工序
+family: 图论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: []
+matlab_toolboxes: [base]
+assumptions: 活动网络无环且工期已知
+pitfalls: 有环网络不检测且混淆总时差与自由时差
+source: 自写重写;参照 算法写作模板 01 规划类论文
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

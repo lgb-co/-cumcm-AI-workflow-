@@ -1,0 +1,34 @@
+id,name_zh,url,kind,license,key_point
+linear_programming,线性规划,https://en.wikipedia.org/wiki/Linear_programming,method,reference-only,标准形与单纯形法
+integer_programming,整数规划,https://en.wikipedia.org/wiki/Integer_programming,method,reference-only,分支定界与整数松弛
+nonlinear_programming,非线性规划,https://en.wikipedia.org/wiki/Sequential_quadratic_programming,method,reference-only,SQP 迭代格式
+dynamic_programming_knapsack,动态规划背包,https://en.wikipedia.org/wiki/Knapsack_problem,method,reference-only,状态转移与容量倒序
+genetic_algorithm,遗传算法,https://en.wikipedia.org/wiki/Genetic_algorithm,method,reference-only,选择-交叉-变异流程
+particle_swarm,粒子群,https://en.wikipedia.org/wiki/Particle_swarm_optimization,method,reference-only,速度更新与惯性权重
+simulated_annealing,模拟退火,https://en.wikipedia.org/wiki/Simulated_annealing,method,reference-only,Metropolis 接受准则与降温
+ant_colony_tsp,蚁群算法,https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms,method,reference-only,信息素更新与转移概率
+ahp,层次分析法,https://en.wikipedia.org/wiki/Analytic_hierarchy_process,method,reference-only,判断矩阵与一致性比率 CR
+entropy_weight,熵权法,https://en.wikipedia.org/wiki/Entropy_(information_theory),method,reference-only,信息熵与差异系数
+topsis,TOPSIS,https://en.wikipedia.org/wiki/TOPSIS,method,reference-only,正负理想解与贴近度
+grey_relational,灰色关联,https://en.wikipedia.org/wiki/Grey_relational_analysis,method,reference-only,关联系数与分辨系数
+moran_i,Moran's I,https://en.wikipedia.org/wiki/Moran%27s_I,method,reference-only,空间权重与自相关统计量
+kriging,克里金插值,https://en.wikipedia.org/wiki/Kriging,method,reference-only,变异函数与无偏约束
+nash_equilibrium,纳什均衡,https://en.wikipedia.org/wiki/Nash_equilibrium,method,reference-only,最优反应与混合策略无差异条件
+shapley_value,Shapley 值,https://en.wikipedia.org/wiki/Shapley_value,method,reference-only,边际贡献加权求和
+evolutionary_game,演化博弈,https://en.wikipedia.org/wiki/Replicator_equation,method,reference-only,复制动态方程
+bass_diffusion,Bass 扩散,https://en.wikipedia.org/wiki/Bass_diffusion_model,method,reference-only,创新与模仿系数
+seir_model,SEIR 模型,https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology,method,reference-only,四仓室方程与 R0
+wave_equation_1d,波动方程差分,https://en.wikipedia.org/wiki/Courant%E2%80%93Friedrichs%E2%80%93Lewy_condition,method,reference-only,CFL 稳定性条件
+laplace_equation_2d,拉普拉斯方程,https://en.wikipedia.org/wiki/Successive_over-relaxation,method,reference-only,SOR 迭代格式与收敛
+bayesian_inference,贝叶斯估计,https://en.wikipedia.org/wiki/Conjugate_prior,method,reference-only,Beta-二项共轭后验
+robust_regression,稳健回归,https://en.wikipedia.org/wiki/Huber_loss,method,reference-only,Huber 损失与阈值
+queueing_mmc,M/M/c 排队,https://en.wikipedia.org/wiki/M/M/c_queue,method,reference-only,Erlang-C 与稳态指标
+monte_carlo_integration,蒙特卡洛积分,https://en.wikipedia.org/wiki/Monte_Carlo_integration,method,reference-only,估计量与 1/sqrt(n) 收敛
+svr_regression,支持向量回归,https://scikit-learn.org/stable/modules/svm.html,implementation,MIT,epsilon-不敏感损失与 RBF 核
+mlp_classification,MLP 分类,https://scikit-learn.org/stable/modules/neural_networks_supervised.html,implementation,MIT,隐藏层与早停
+adaboost_classification,AdaBoost,https://scikit-learn.org/stable/modules/ensemble.html,implementation,MIT,样本权重更新与加权投票
+nar_mlp_forecast,NAR 神经网络预测,https://en.wikipedia.org/wiki/Nonlinear_autoregressive_exogenous_model,method,reference-only,滞后特征构造
+kmeans,K-means,https://scikit-learn.org/stable/modules/clustering.html,implementation,MIT,惯性量与轮廓系数
+pca,主成分分析,https://scikit-learn.org/stable/modules/decomposition.html,implementation,MIT,方差解释率与载荷
+arima_forecast,ARIMA,https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html,implementation,BSD-3-Clause,差分平稳与信息准则定阶
+geodetector_q,地理探测器,http://www.geodetector.cn/,method,reference-only,分层方差比 q 统计量

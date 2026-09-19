@@ -1,0 +1,17 @@
+id: max_flow
+name_zh: 最大流
+category: 05_图与网络
+problem_types: 运输能力与匹配问题
+family: 图论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 容量非负且源汇明确
+pitfalls: 多源多汇未处理且不做整数性说明
+source: 自写重写;参照 算法写作模板 01 图论论文
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

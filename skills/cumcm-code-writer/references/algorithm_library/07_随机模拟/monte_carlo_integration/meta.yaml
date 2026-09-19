@@ -1,0 +1,17 @@
+id: monte_carlo_integration
+name_zh: 蒙特卡洛积分
+category: 07_随机模拟
+problem_types: 概率估算与复杂积分
+family: 随机模拟
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 需说明分布假设与样本量收敛性
+pitfalls: 样本量过小且不报告标准误
+source: 自写重写;本地参照 02 源代码 蒙特卡洛模拟
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

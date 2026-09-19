@@ -1,0 +1,17 @@
+id: rfe_feature_selection
+name_zh: 递归特征消除
+category: 09_降维与特征
+problem_types: 特征筛选与变量精简
+family: 特征工程
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需指定评估器与保留数量
+pitfalls: 不做交叉验证导致选择偏差
+source: 自写重写;参照 算法写作模板 01 机器学习类论文
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

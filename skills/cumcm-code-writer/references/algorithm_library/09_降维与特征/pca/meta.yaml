@@ -1,0 +1,17 @@
+id: pca
+name_zh: 主成分分析
+category: 09_降维与特征
+problem_types: 降维与综合评价
+family: 降维
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需标准化并检验适用性
+pitfalls: 不标准化或用主成分直接替代原始指标命名
+source: 自写重写;本地参照 02 源代码 PCA主成分分析法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

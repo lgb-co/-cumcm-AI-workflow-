@@ -1,0 +1,17 @@
+id: mcmc_metropolis
+name_zh: MCMC Metropolis抽样
+category: 07_随机模拟
+problem_types: 后验抽样与参数估计
+family: 随机模拟
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 需检查收敛与混合性
+pitfalls: 不丢弃预热样本且不诊断收敛
+source: 自写重写;参照 算法写作模板 04 培训资料
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

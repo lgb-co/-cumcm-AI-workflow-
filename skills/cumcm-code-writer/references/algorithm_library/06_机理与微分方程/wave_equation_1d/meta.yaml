@@ -1,0 +1,17 @@
+id: wave_equation_1d
+name_zh: 一维波动方程有限差分
+category: 06_机理与微分方程
+problem_types: 振动与波传播仿真
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 显式格式需满足 CFL 条件
+pitfalls: 违反 CFL 导致数值发散
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

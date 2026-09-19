@@ -1,0 +1,17 @@
+id: random_forest_regression
+name_zh: 随机森林回归
+category: 03_预测时序
+problem_types: 非线性预测与特征重要性
+family: 机器学习
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需处理缺失与类别变量并划分验证集
+pitfalls: 用训练集精度报效果
+source: 自写重写;本地参照 14种国赛必备算法 随机森林回归
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

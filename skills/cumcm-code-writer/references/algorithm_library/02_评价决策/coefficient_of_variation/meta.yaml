@@ -1,0 +1,17 @@
+id: coefficient_of_variation
+name_zh: 变异系数法赋权
+category: 02_评价决策
+problem_types: 客观赋权
+family: 评价决策
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 指标为可比的正向化数据
+pitfalls: 与熵权法混用却不说明依据
+source: 自写重写;参照 算法写作模板 01 评价类论文
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

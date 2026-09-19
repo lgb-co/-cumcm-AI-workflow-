@@ -1,0 +1,17 @@
+id: particle_swarm
+name_zh: 粒子群优化
+category: 01_优化与启发式
+problem_types: 连续参数寻优
+family: 启发式算法
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 搜索空间连续且可定义速度边界
+pitfalls: 越界不处理导致发散
+source: 自写重写;本地参照 02 源代码 粒子群算法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

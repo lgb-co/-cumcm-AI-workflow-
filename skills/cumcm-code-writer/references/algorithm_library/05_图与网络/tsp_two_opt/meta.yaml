@@ -1,0 +1,17 @@
+id: tsp_two_opt
+name_zh: TSP两阶段启发式
+category: 05_图与网络
+problem_types: 巡回路径规划
+family: 图论与启发式
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 需给出距离矩阵与改进策略
+pitfalls: 只做最近邻不改进且不报最优间隙
+source: 自写重写;本地参照 02 源代码 蚁群算法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

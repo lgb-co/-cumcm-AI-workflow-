@@ -1,0 +1,17 @@
+id: arima_forecast
+name_zh: ARIMA 时序预测
+category: 03_预测时序
+problem_types: 平稳或差分平稳序列预测
+family: 时间序列
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, pandas, statsmodels]
+matlab_toolboxes: [econ]
+assumptions: 序列平稳且样本长度足够定阶
+pitfalls: 不做差分直接套ARMA或样本过少定阶
+source: 自写重写;本地参照 02 源代码 ARMA时间序列预测
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

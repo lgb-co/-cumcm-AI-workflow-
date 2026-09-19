@@ -1,0 +1,17 @@
+id: correlation_analysis
+name_zh: 相关分析
+category: 08_统计检验
+problem_types: 变量关联强度与显著性
+family: 统计检验
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, pandas, scipy]
+matlab_toolboxes: [base]
+assumptions: 需区分Pearson与Spearman适用条件
+pitfalls: 相关当因果且不报显著性
+source: 自写重写;本地参照 02 源代码 相关系数
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

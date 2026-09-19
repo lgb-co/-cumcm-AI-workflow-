@@ -1,0 +1,17 @@
+id: minimum_spanning_tree
+name_zh: 最小生成树
+category: 05_图与网络
+problem_types: 网络铺设与聚类连接
+family: 图论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: []
+matlab_toolboxes: [base]
+assumptions: 无向连通带权图
+pitfalls: 有向图硬用或不检查连通分量
+source: 自写重写;本地参照 02 源代码 图论类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

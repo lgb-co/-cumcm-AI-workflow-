@@ -1,0 +1,17 @@
+id: ridge_regression
+name_zh: 岭回归
+category: 03_预测时序
+problem_types: 共线性下的回归
+family: 统计回归
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 存在多重共线性且需要正则化
+pitfalls: 惩罚系数拍定或标准化后按原尺度解释系数
+source: 自写重写;参照 14种国赛必备算法 回归类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

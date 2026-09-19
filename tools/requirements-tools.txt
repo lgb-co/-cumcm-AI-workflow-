@@ -1,0 +1,4 @@
+# md2docx_native.py / md2docx_latex.py 依赖（setup-md2docx.ps1 装进 工具\md2docx_env）
+pypandoc_binary>=1.17
+python-docx>=1.1
+lxml>=5.0

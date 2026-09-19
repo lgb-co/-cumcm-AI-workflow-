@@ -1,0 +1,6 @@
+interface:
+  display_name: "数学模型评价"
+  short_description: "依据赛题与数据逐项联网查证模型和算法，给出详细评分、问题定位与改进方案"
+  default_prompt: "请使用数学模型评价 Skill 审查我上传的赛题、全部附件和按小问组织的模型与算法方案，逐项联网查证，并在我指定路径下新建“数学模型评价”文件夹保存中文诊断报告。"
+policy:
+  allow_implicit_invocation: true

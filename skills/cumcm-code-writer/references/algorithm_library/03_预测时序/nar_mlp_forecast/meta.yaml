@@ -1,0 +1,17 @@
+id: nar_mlp_forecast
+name_zh: NAR 非线性自回归神经网络预测
+category: 03_预测时序
+problem_types: 非线性时序预测
+family: 机器学习
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [econ]
+assumptions: 序列自相关明显且样本足够构造滞后特征
+pitfalls: 滞后阶数过大导致过拟合
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

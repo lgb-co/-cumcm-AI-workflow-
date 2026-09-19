@@ -1,0 +1,17 @@
+id: iqr_outlier
+name_zh: IQR四分位距异常检测
+category: 10_数据预处理
+problem_types: 单变量异常识别
+family: 数据预处理
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 分布近似对称时效果较好
+pitfalls: 不做业务复核直接删除样本
+source: 自写重写;本地参照 02 源代码 箱型图检测异常值
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

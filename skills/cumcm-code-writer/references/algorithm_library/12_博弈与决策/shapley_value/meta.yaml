@@ -1,0 +1,17 @@
+id: shapley_value
+name_zh: Shapley 值
+category: 12_博弈与决策
+problem_types: 合作博弈收益与成本分摊
+family: 博弈论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 需给出所有联盟的特征函数值
+pitfalls: 枚举规模过大或特征函数缺失
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

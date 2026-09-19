@@ -1,0 +1,17 @@
+id: genetic_algorithm
+name_zh: 遗传算法
+category: 01_优化与启发式
+problem_types: 组合优化/复杂约束寻优
+family: 启发式算法
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 编码与适应度可定义且参数可调
+pitfalls: 不固定随机种子、不报告收敛过程
+source: 自写重写;本地参照 02 源代码 遗传算法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

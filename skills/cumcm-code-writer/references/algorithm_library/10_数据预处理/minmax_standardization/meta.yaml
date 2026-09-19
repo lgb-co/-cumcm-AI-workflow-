@@ -1,0 +1,17 @@
+id: minmax_standardization
+name_zh: 归一化与标准化
+category: 10_数据预处理
+problem_types: 建模前数据处理
+family: 数据预处理
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 需区分极值敏感与方差敏感方法
+pitfalls: 用全量统计量做划分后标准化造成信息泄漏
+source: 自写重写;本地参照 02 源代码 数据预处理类
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

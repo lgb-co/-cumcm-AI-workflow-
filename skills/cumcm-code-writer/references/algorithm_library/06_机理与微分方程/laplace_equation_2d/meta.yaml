@@ -1,0 +1,17 @@
+id: laplace_equation_2d
+name_zh: 二维拉普拉斯方程 SOR
+category: 06_机理与微分方程
+problem_types: 稳态温度与势场分布
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 边界条件完备且松弛因子在 0~2
+pitfalls: 松弛因子过大导致不收敛
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

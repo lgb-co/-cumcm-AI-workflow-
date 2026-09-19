@@ -1,0 +1,17 @@
+id: sir_model
+name_zh: SIR传染病模型
+category: 06_机理与微分方程
+problem_types: 疫情传播与干预模拟
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [base]
+assumptions: 人群均匀混合且需估计传染率与恢复率
+pitfalls: 不说明假设且参数无数据支撑
+source: 自写重写;本地参照 02 源代码 传染病模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

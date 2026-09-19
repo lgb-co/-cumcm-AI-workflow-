@@ -1,0 +1,17 @@
+id: linear_programming
+name_zh: 线性规划
+category: 01_优化与启发式
+problem_types: 资源分配/生产计划/运输问题
+family: 数学规划
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [optim]
+assumptions: 目标与约束均为线性且变量连续
+pitfalls: 把非线性关系强行线性化而不说明误差
+source: 自写重写;本地参照 数据集/算法写作模板 02 源代码 线性规划模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

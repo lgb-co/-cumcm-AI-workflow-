@@ -1,0 +1,17 @@
+id: nonlinear_programming
+name_zh: 非线性规划
+category: 01_优化与启发式
+problem_types: 连续变量非线性优化
+family: 数学规划
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [optim]
+assumptions: 目标与约束可微且初值合理
+pitfalls: 单次局部求解即宣称全局最优
+source: 自写重写;本地参照 02 源代码 非线性规划模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

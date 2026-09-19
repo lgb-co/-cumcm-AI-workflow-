@@ -1,0 +1,17 @@
+id: kriging
+name_zh: 普通克里金插值
+category: 11_空间与地理
+problem_types: 空间插值与制图
+family: 空间统计
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 需估计变异函数并满足无偏约束
+pitfalls: 变异函数不拟合直接用经验参数
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

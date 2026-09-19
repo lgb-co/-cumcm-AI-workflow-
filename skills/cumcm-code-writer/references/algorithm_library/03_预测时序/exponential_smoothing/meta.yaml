@@ -1,0 +1,17 @@
+id: exponential_smoothing
+name_zh: 指数平滑预测
+category: 03_预测时序
+problem_types: 短期趋势预测
+family: 时间序列
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 序列含趋势或季节且需选择模型形式
+pitfalls: 平滑系数手动凑结果
+source: 自写重写;本地参照 02 源代码 二次指数平滑预测
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

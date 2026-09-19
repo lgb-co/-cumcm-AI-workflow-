@@ -1,0 +1,17 @@
+id: integer_programming
+name_zh: 整数规划
+category: 01_优化与启发式
+problem_types: 选址/排班/0-1决策
+family: 数学规划
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [optim]
+assumptions: 整数或0-1变量明确且可由求解器处理
+pitfalls: 整数松弛后直接四舍五入取整
+source: 自写重写;本地参照 02 源代码 0-1规划模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

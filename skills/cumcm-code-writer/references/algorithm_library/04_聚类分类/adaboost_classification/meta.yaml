@@ -1,0 +1,17 @@
+id: adaboost_classification
+name_zh: AdaBoost 集成分类
+category: 04_聚类分类
+problem_types: 弱学习器集成分类
+family: 机器学习
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: []
+assumptions: 基学习器为弱分类器且轮数可控
+pitfalls: 轮数过多拟合噪声
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

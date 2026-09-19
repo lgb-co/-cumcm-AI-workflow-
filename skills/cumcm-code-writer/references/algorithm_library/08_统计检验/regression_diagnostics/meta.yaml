@@ -1,0 +1,17 @@
+id: regression_diagnostics
+name_zh: 回归诊断
+category: 08_统计检验
+problem_types: 模型假设检验与异常点识别
+family: 统计检验
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy, statsmodels]
+matlab_toolboxes: [stats]
+assumptions: 需检查残差正态性异方差与共线性
+pitfalls: 只看R2不查假设
+source: 自写重写;参照 算法写作模板 04 培训资料
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

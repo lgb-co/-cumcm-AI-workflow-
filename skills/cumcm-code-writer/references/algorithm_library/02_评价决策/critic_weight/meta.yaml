@@ -1,0 +1,17 @@
+id: critic_weight
+name_zh: CRITIC 赋权法
+category: 02_评价决策
+problem_types: 指标权重与客观评价
+family: 评价决策
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 指标需正向化且相关性可计算
+pitfalls: 把冲突性当负向指标或与熵权法混用不说明依据
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

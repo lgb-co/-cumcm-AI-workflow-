@@ -1,0 +1,17 @@
+id: bootstrap_resampling
+name_zh: Bootstrap重采样
+category: 07_随机模拟
+problem_types: 置信区间与稳健性评估
+family: 随机模拟
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 样本可交换性假设成立
+pitfalls: 小样本套用且不报重采样次数
+source: 自写重写;参照 算法写作模板 04 培训资料
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

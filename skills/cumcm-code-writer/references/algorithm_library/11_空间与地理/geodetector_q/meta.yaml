@@ -1,0 +1,17 @@
+id: geodetector_q
+name_zh: 地理探测器 q 统计量
+category: 11_空间与地理
+problem_types: 驱动因子解释力分析
+family: 空间统计
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 因子需离散分层且层内样本充足
+pitfalls: 分层过细导致 q 虚高
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

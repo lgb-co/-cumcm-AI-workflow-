@@ -1,0 +1,6 @@
+﻿name,url,license,target,status,note,fetched_at
+numpy-license,https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt,BSD-3-Clause,_vendors/licenses,fetched,依赖库许可原文，随技能分发时随附；1543 bytes,2026-09-10 18:10
+scipy-license,https://raw.githubusercontent.com/scipy/scipy/main/LICENSE.txt,BSD-3-Clause,_vendors/licenses,fetched,依赖库许可原文；1531 bytes,2026-09-10 18:10
+scikit-learn-license,https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/COPYING,BSD-3-Clause,_vendors/licenses,fetched,依赖库许可原文；1532 bytes,2026-09-10 18:10
+statsmodels-license,https://raw.githubusercontent.com/statsmodels/statsmodels/main/LICENSE.txt,BSD-3-Clause,_vendors/licenses,fetched,依赖库许可原文；1636 bytes,2026-09-10 18:10
+gpl-sample-index-only,https://www.gnu.org/licenses/gpl-3.0.txt,GPL-3.0,_vendors/index_only,index_only,GPL 类样本：只登记不下载，验证许可闸门；非宽松许可，仅登记不复制,2026-09-10 18:10

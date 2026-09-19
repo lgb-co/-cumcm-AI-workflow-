@@ -1,0 +1,17 @@
+id: logistic_regression
+name_zh: Logistic回归
+category: 04_聚类分类
+problem_types: 二分类概率建模
+family: 分类
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需检查线性可分性与多重共线性
+pitfalls: 直接解释OR值却不看置信区间
+source: 自写重写;本地参照 02 源代码 Logistic预测模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,56 @@
+{
+  "package": "CUMCM全流程工作流",
+  "version": "1.1.0",
+  "protocol_version": "1.4",
+  "built_at_utc": "2026-09-19T08:19:51Z",
+  "core_skill_baseline_version": "1.0.2",
+  "core_skill_baseline_sha256": {
+    "数学模型建立": "30d5423c1bdde94b966da61437dd932a9e5de2cd4726145576a054c16d9f98a6",
+    "数学模型评价": "94d34e7e0ac615ca8922863795e28c8206c41a543031dd88b7de27c12e42d199",
+    "cumcm-code-writer": "938378b3122e0cf425ecebcabcff46059275132b9adada17bc2c73561558626b",
+    "cumcm-code-reviewer": "00e38a17ba5c7c811f12e3dbe492b06baf4f2bd015e82638c349bec9ac8eeaf6"
+  },
+  "skills": [
+    {
+      "name": "数学模型建立",
+      "description": "建模：拆题、数学化、检索取数，出方案与数据文档",
+      "files": 22,
+      "skill_sha256": "30d5423c1bdde94b966da61437dd932a9e5de2cd4726145576a054c16d9f98a6"
+    },
+    {
+      "name": "数学模型评价",
+      "description": "方案评审：逐问四遍复读 + 联网查证，出诊断与修改方案",
+      "files": 76,
+      "skill_sha256": "94d34e7e0ac615ca8922863795e28c8206c41a543031dd88b7de27c12e42d199"
+    },
+    {
+      "name": "cumcm-code-writer",
+      "description": "代码编写：按方案写竞赛可读代码，三轮自测，出附录与结果文档",
+      "files": 453,
+      "skill_sha256": "938378b3122e0cf425ecebcabcff46059275132b9adada17bc2c73561558626b"
+    },
+    {
+      "name": "cumcm-code-reviewer",
+      "description": "代码检测：干净副本复跑 + 独立复算，出 P0/P1/P2 清单",
+      "files": 71,
+      "skill_sha256": "00e38a17ba5c7c811f12e3dbe492b06baf4f2bd015e82638c349bec9ac8eeaf6"
+    },
+    {
+      "name": "cumcm-paper-writer",
+      "description": "论文成文：起草/改写/校验（格式+风格+数字+赛题逐条对照）",
+      "files": 19,
+      "skill_sha256": "786ee15a25e1dd8fffbb731c45f50a69da9f483d7378d857493cd77224f6d39c"
+    },
+    {
+      "name": "cumcm-fullflow",
+      "description": "总指挥流程：按阶段派发独立任务、守门禁、核验回执、串起全流程",
+      "files": 6,
+      "skill_sha256": "57a1f44ea2b9caf1112718bf57fa960b379a487bd8bc6d04fb40c5d7989fee77"
+    }
+  ],
+  "notes": [
+    "四个核心执行 Skill 保持 v1.0.2 逐文件不变（仅允许嵌入 manifest 元数据刷新）。",
+    "v1.1.0 新增统一 cumcm-flow CLI、doctor 陌生机器体检和跨平台启动器；CLI 只做工程操作。",
+    "论文 Skill 保持为独立执行目录，由总指挥编排调用。"
+  ]
+}

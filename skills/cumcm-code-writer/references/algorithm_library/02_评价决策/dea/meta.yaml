@@ -1,0 +1,17 @@
+id: dea
+name_zh: DEA 数据包络分析
+category: 02_评价决策
+problem_types: 多投入多产出效率评价
+family: 评价决策
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [optim]
+assumptions: 决策单元数量不低于投入产出项数的两倍
+pitfalls: 决策单元过少导致效率值大量为1
+source: 自写重写;本地参照 02 源代码 DEA综合评价法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

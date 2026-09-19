@@ -1,0 +1,17 @@
+id: simulated_annealing
+name_zh: 模拟退火
+category: 01_优化与启发式
+problem_types: 组合优化/路径规划/布局
+family: 启发式算法
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [base]
+assumptions: 邻域结构与降温计划可定义
+pitfalls: 初温过低退化为爬山法
+source: 自写重写;本地参照 02 源代码 模拟退火
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,17 @@
+id: lotka_volterra
+name_zh: Lotka-Volterra竞争捕食模型
+category: 06_机理与微分方程
+problem_types: 种群竞争与捕食关系
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: [base]
+assumptions: 需估计相互作用系数
+pitfalls: 结果发散不做稳定性说明
+source: 自写重写;本地参照 02 源代码 种群模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

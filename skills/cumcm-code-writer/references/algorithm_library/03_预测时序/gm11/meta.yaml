@@ -1,0 +1,17 @@
+id: gm11
+name_zh: 灰色预测GM(1
+category: 03_预测时序
+problem_types: 1)
+family: 小样本单调趋势预测
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 灰色系统
+pitfalls: 样本少且近似指数增长并通过级比检验
+source: 大样本强用或不做后验差检验
+license: 自写重写;本地参照 02 源代码 灰色预测模型
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

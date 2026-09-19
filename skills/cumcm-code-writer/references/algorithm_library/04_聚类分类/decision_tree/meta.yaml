@@ -1,0 +1,17 @@
+id: decision_tree
+name_zh: 决策树分类
+category: 04_聚类分类
+problem_types: 可解释规则提取
+family: 分类
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需剪枝与深度控制
+pitfalls: 不限制深度导致完全拟合训练集
+source: 自写重写;本地参照 02 源代码 决策树分类模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

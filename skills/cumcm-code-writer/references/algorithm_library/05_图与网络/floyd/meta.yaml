@@ -1,0 +1,17 @@
+id: floyd
+name_zh: Floyd全源最短路
+category: 05_图与网络
+problem_types: 任意两点最短路径
+family: 图论
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 顶点规模不宜过大
+pitfalls: 节点数大时O(n^3)超时
+source: 自写重写;本地参照 02 源代码 Floyd算法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,46 @@
+{
+  "note": "外部参考来源清单。仅宽松许可（MIT/BSD/Apache-2.0/CC0/public-domain）会被下载，其余仅登记。",
+  "fields": ["name", "url", "license", "target", "filename", "note"],
+  "sources": [
+    {
+      "name": "numpy-license",
+      "url": "https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt",
+      "license": "BSD-3-Clause",
+      "target": "_vendors/licenses",
+      "filename": "numpy_LICENSE.txt",
+      "note": "依赖库许可原文，随技能分发时随附"
+    },
+    {
+      "name": "scipy-license",
+      "url": "https://raw.githubusercontent.com/scipy/scipy/main/LICENSE.txt",
+      "license": "BSD-3-Clause",
+      "target": "_vendors/licenses",
+      "filename": "scipy_LICENSE.txt",
+      "note": "依赖库许可原文"
+    },
+    {
+      "name": "scikit-learn-license",
+      "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/COPYING",
+      "license": "BSD-3-Clause",
+      "target": "_vendors/licenses",
+      "filename": "scikit_learn_LICENSE.txt",
+      "note": "依赖库许可原文"
+    },
+    {
+      "name": "statsmodels-license",
+      "url": "https://raw.githubusercontent.com/statsmodels/statsmodels/main/LICENSE.txt",
+      "license": "BSD-3-Clause",
+      "target": "_vendors/licenses",
+      "filename": "statsmodels_LICENSE.txt",
+      "note": "依赖库许可原文"
+    },
+    {
+      "name": "gpl-sample-index-only",
+      "url": "https://www.gnu.org/licenses/gpl-3.0.txt",
+      "license": "GPL-3.0",
+      "target": "_vendors/index_only",
+      "filename": "",
+      "note": "GPL 类样本：只登记不下载，验证许可闸门"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+id: topsis
+name_zh: TOPSIS 逼近理想解
+category: 02_评价决策
+problem_types: 多方案排序
+family: 评价决策
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 方案数不少于2且指标可同向化
+pitfalls: 不做归一化或理想解仍混入负向指标
+source: 自写重写;本地参照 02 源代码 TOPSIS综合评价法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

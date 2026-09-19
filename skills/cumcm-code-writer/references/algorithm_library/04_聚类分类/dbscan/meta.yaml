@@ -1,0 +1,17 @@
+id: dbscan
+name_zh: DBSCAN密度聚类
+category: 04_聚类分类
+problem_types: 任意形状簇与异常点识别
+family: 聚类
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [base]
+assumptions: 样本密度差异不大且参数可调
+pitfalls: 密度差异大硬用且不说明参数来源
+source: 自写重写;参照 算法写作模板 01 聚类类论文
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

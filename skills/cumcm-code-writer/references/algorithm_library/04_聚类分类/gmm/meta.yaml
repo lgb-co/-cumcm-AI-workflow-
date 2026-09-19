@@ -1,0 +1,17 @@
+id: gmm
+name_zh: 高斯混合模型软聚类
+category: 04_聚类分类
+problem_types: 概率归属与软聚类
+family: 聚类
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [base, stats]
+assumptions: 需初始化策略与协方差类型并做模型选择
+pitfalls: 不设随机种子或簇数不做BIC选择
+source: 自写重写;本地参照 02 源代码 高斯混合聚类模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

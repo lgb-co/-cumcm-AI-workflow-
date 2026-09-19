@@ -1,0 +1,17 @@
+id: factor_analysis
+name_zh: 因子分析
+category: 09_降维与特征
+problem_types: 潜变量结构识别
+family: 降维
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需确定因子数并做旋转
+pitfalls: 与主成分分析混为一谈
+source: 自写重写;本地参照 02 源代码 因子分析
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

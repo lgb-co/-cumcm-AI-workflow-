@@ -1,0 +1,17 @@
+id: linear_regression
+name_zh: 多元线性回归
+category: 03_预测时序
+problem_types: 影响因素建模与预测
+family: 统计回归
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: [stats]
+assumptions: 线性关系且残差近似独立同分布
+pitfalls: 不做共线性检查或用R2当因果证据
+source: 自写重写;本地参照 02 源代码 回归分析预测模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

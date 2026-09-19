@@ -1,0 +1,17 @@
+id: svm_classification
+name_zh: 支持向量机分类
+category: 04_聚类分类
+problem_types: 中小样本分类
+family: 分类
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn]
+matlab_toolboxes: [stats]
+assumptions: 需选择核函数与惩罚参数
+pitfalls: 不做交叉验证选核或概率输出未校准
+source: 自写重写;本地参照 02 源代码 支持向量机
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

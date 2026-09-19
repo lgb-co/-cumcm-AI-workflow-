@@ -1,0 +1,6 @@
+cumcm-code-writer 1.0.1
+build: 2026-09-10
+algorithms: 90 (180 templates, Python + MATLAB)
+scripts: 18
+figures: 交付图件一律由 Python(matplotlib) 生成，MATLAB 仅计算
+third_party_licenses: references/algorithm_library/_vendors/licenses

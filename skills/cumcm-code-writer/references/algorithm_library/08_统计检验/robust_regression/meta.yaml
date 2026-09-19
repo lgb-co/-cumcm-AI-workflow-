@@ -1,0 +1,17 @@
+id: robust_regression
+name_zh: Huber 稳健回归
+category: 08_统计检验
+problem_types: 含离群点的回归建模
+family: 统计回归
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, sklearn, statsmodels]
+matlab_toolboxes: [base, stats]
+assumptions: 异常点占比不高且需与 OLS 对照
+pitfalls: 不做对照无法说明稳健性收益
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

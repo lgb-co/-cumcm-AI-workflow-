@@ -1,0 +1,17 @@
+id: rsr
+name_zh: 秩和比综合评价
+category: 02_评价决策
+problem_types: 综合评价与分档
+family: 评价决策
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, pandas]
+matlab_toolboxes: []
+assumptions: 指标可同向化并排序
+pitfalls: 分档阈值拍定且不报告概率单位
+source: 自写重写;本地参照 02 源代码 秩和比综合评价法
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

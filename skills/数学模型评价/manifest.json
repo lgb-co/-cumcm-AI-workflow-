@@ -1,0 +1,310 @@
+{
+  "name": "cumcm-model-review",
+  "display_name": "数学模型评价",
+  "version": "1.0.1",
+  "created": "2026-09-10",
+  "updated": "2026-09-10",
+  "note": "由“数学建模评价”更名为“数学模型评价”，文件与校验和已同步重建。",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "94d34e7e0ac615ca8922863795e28c8206c41a543031dd88b7de27c12e42d199"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "037eaeb464fc3281249f6b6abfe5e9dde0d12fef61d835e15a47cb8cd2d11e98"
+    },
+    {
+      "path": "assets/input-template.md",
+      "sha256": "967a4c7c9659bbe9ebc5f9186348259469af749c4c925a964429ab733f6bedf0"
+    },
+    {
+      "path": "references/corpus-lessons.md",
+      "sha256": "2cc486eafa288409b26fb8db54fdb244c47487681bbb291c6e2e9371fd8fff86"
+    },
+    {
+      "path": "references/methods-index.md",
+      "sha256": "aee2868db5accea5e7e0bf75e029ca86c44eaf1ea30289045b7c1b42becc0e25"
+    },
+    {
+      "path": "references/methods/01-optimization.md",
+      "sha256": "9e919461942fa1041c54db793938671763af3f4ba669f6f6b668f49c608e922f"
+    },
+    {
+      "path": "references/methods/02-graphs.md",
+      "sha256": "c2a9e4f28f195b5666396adfffdedae8f0d0bafa1e738f91a514d3ea4b0fb923"
+    },
+    {
+      "path": "references/methods/03-statistics.md",
+      "sha256": "7688c3b4a4cd994a3253bf6020c3418b40c0d8bee8c0280364d22aebf1ce39b9"
+    },
+    {
+      "path": "references/methods/04-forecast.md",
+      "sha256": "8982832cacf4b232ab57e8afb1bd754ee8f11714ebfd0fb77730d39619ea5bb1"
+    },
+    {
+      "path": "references/methods/05-evaluation.md",
+      "sha256": "dca8e0e6f26484f31495431b3528cd168ad5e3cdf184f01ba2c6171d0f93188b"
+    },
+    {
+      "path": "references/methods/06-machine-learning.md",
+      "sha256": "af0333d068c84f7093082432025c3590a867cc6d9c72a4a4af5f083b39066acc"
+    },
+    {
+      "path": "references/methods/07-mechanistic.md",
+      "sha256": "7675dc20add35cd3aa0ccc3678dcc5dafecd33fc4c2be4f9058eb5d54675cd00"
+    },
+    {
+      "path": "references/methods/08-simulation.md",
+      "sha256": "9053fd344f1f2160737eb62109e1702775acb60e8e006a076ccac550cc543098"
+    },
+    {
+      "path": "references/methods/09-heuristics.md",
+      "sha256": "f65ab53aa32ed708aeeb40b44ebf2ddc71b5526574dcce584532b4d7bb9b13a9"
+    },
+    {
+      "path": "references/methods/10-sensitivity.md",
+      "sha256": "c4ce31860a89550b1f6b3b95d6b12683215561f9e9804f9942ecb25b7f7459d1"
+    },
+    {
+      "path": "references/network-verification.md",
+      "sha256": "1bf145fc0a4aae677c17fa5a793469dc8c64dbd0a6ed7f1c2f3802aae39dc344"
+    },
+    {
+      "path": "references/problems-index.md",
+      "sha256": "655b3fd176aa87087e7bd71bd98f7ec86fda0e9fb2c4311ea56beca689a7da99"
+    },
+    {
+      "path": "references/problems/2005A.md",
+      "sha256": "b58abe5a7e7fecc790d69272850bee19ad58e0c9ef0595f7593ac9f0852897d9"
+    },
+    {
+      "path": "references/problems/2005B.md",
+      "sha256": "25c6ac9d8b0ea75015cea960e66ecd336bbab5f448a373f8b9c7780922f5b173"
+    },
+    {
+      "path": "references/problems/2006A.md",
+      "sha256": "ad9b6e482ee8ebf0d0d98cc223bcc6cc2a0507f1fb8f7d5b68239061c8cb076f"
+    },
+    {
+      "path": "references/problems/2006B.md",
+      "sha256": "5a666acc4fb9eb85b37b95293e19dd5049686bdd0cdf8f4499a58239ca484158"
+    },
+    {
+      "path": "references/problems/2007A.md",
+      "sha256": "c9223bd5c1120806666cd5f7255691edc725539db3f6e9f368f037b8a5a3e7e6"
+    },
+    {
+      "path": "references/problems/2007B.md",
+      "sha256": "aa8cf5a7906a9beb1d23ae7166fa4cfdbabff511c7377f8ad59320f52afd413a"
+    },
+    {
+      "path": "references/problems/2008A.md",
+      "sha256": "44d5b0b4248c7fd01262663068aaadae8b2e4ec9192397d2cde884b498ddca77"
+    },
+    {
+      "path": "references/problems/2008B.md",
+      "sha256": "af3c932d128a83d3e7e3f4cae61dace74deaaae858433b8a7fa5998779e16fcd"
+    },
+    {
+      "path": "references/problems/2009A.md",
+      "sha256": "b354a81111f826eec6f1d53588ec730c7c83b4d5782efbfc9b360f566d9b297d"
+    },
+    {
+      "path": "references/problems/2009B.md",
+      "sha256": "ab8c248ed1c78a5bec831609fb77a2d5f4ffd361284ccd0f04ca2533fd94050c"
+    },
+    {
+      "path": "references/problems/2010A.md",
+      "sha256": "c0664f898d1da73c8702776b6efdb846ad4267af4cdc9689bee74d79be219bc3"
+    },
+    {
+      "path": "references/problems/2010B.md",
+      "sha256": "e381ffdc55eb2c98ca07c542b4042e5cf83d13a3e9f453b1cde579b059883911"
+    },
+    {
+      "path": "references/problems/2011A.md",
+      "sha256": "c580a4214d7181ca6ebeb4458ced7f163203a1673c055cd01ce68b26643df697"
+    },
+    {
+      "path": "references/problems/2011B.md",
+      "sha256": "09a87f57b9f0307ec9f335644f33c56947012fd7a0537ec5fe6b247d20eaa44a"
+    },
+    {
+      "path": "references/problems/2012A.md",
+      "sha256": "fb51cd900164861de819bff230312b151255cf1983a442d064bc6508a9f50c60"
+    },
+    {
+      "path": "references/problems/2012B.md",
+      "sha256": "116e7b27edfd5433fb6b8e4643939e8cd565214ed7e0bab79051c20b233d2bac"
+    },
+    {
+      "path": "references/problems/2013A.md",
+      "sha256": "bb44bc5574c023c73b6806e2ca80a922b8a0e691e7dfa175ca66d9b71dc7f2a3"
+    },
+    {
+      "path": "references/problems/2013B.md",
+      "sha256": "c981e1f7d5bdf5d0d217651a8e8dc07ec5958bd4199e07aef9420b8105a5320d"
+    },
+    {
+      "path": "references/problems/2014A.md",
+      "sha256": "e1f73044f23e97825bd85c235ba1edbf641ec51c8d1746408598da51fdf174b8"
+    },
+    {
+      "path": "references/problems/2014B.md",
+      "sha256": "544da01014090c3328f25c902bedcf3d76beda6bcc755844e25bee79d8ed041f"
+    },
+    {
+      "path": "references/problems/2015A.md",
+      "sha256": "2cddd59c73241b48618481ec7ea08038627bbc1559f3cb15fa9a49054971cc24"
+    },
+    {
+      "path": "references/problems/2015B.md",
+      "sha256": "9da194d8a2ef2adb964d7b954d6fc36557d0c10bcd3e6ccbeeaae329ecc3c691"
+    },
+    {
+      "path": "references/problems/2016A.md",
+      "sha256": "0fa79f59a743e2e1e1038c23ff6aace7946729f1daf2bd4a323aedc169a897aa"
+    },
+    {
+      "path": "references/problems/2016B.md",
+      "sha256": "e2dcc1afb7516509e4527d227bc3126063c55af06a660acf9c5258ce31e7f30f"
+    },
+    {
+      "path": "references/problems/2017A.md",
+      "sha256": "a27bb458d49062133722b21d8e0856f305a9931521948c27524615a5c3bb6c1f"
+    },
+    {
+      "path": "references/problems/2017B.md",
+      "sha256": "1ef8e215f40fa4212347adb056b93fdcdcc858ba342e6006e7dffd89630ecf9d"
+    },
+    {
+      "path": "references/problems/2018A.md",
+      "sha256": "3932df122d1e4dd4d6a532f049b4e780b2aeef2383ff88bb9c2ef4f62bd50d45"
+    },
+    {
+      "path": "references/problems/2018B.md",
+      "sha256": "376a412e81a9960ff27ef1bb9a4c33e29821430d32d9825dacbc337f3758e39b"
+    },
+    {
+      "path": "references/problems/2019A.md",
+      "sha256": "678a2f8cfbfd922a53a4c75b624a52ed8dda935606598f4bd2064637ed315a19"
+    },
+    {
+      "path": "references/problems/2019B.md",
+      "sha256": "98a4ba29eaa229e8e7c7f32e938640ef2171b375f62d5da5870c7c8325291fd3"
+    },
+    {
+      "path": "references/problems/2019C.md",
+      "sha256": "41c8eef0d0b894501df03117441b67b557e2bfe0c65f3a9f3d22b9104549de9e"
+    },
+    {
+      "path": "references/problems/2020A.md",
+      "sha256": "311aba095c37306db30681941d16e388b78e2c5007cf093387988b5374dd78e0"
+    },
+    {
+      "path": "references/problems/2020B.md",
+      "sha256": "db1be6fdde071f5bd2fc9ac300a917663f2e3a921999b99d1fe013983d6f4ebc"
+    },
+    {
+      "path": "references/problems/2020C.md",
+      "sha256": "a36f426105aefe8c0834dbde460019e53f9b347d157c951f1c4e9ee7fc07e6d9"
+    },
+    {
+      "path": "references/problems/2021A.md",
+      "sha256": "0ba075d5abc1661720d009a76d4dd5ab17df6e15e2a2bc065fd0a66dc80d9675"
+    },
+    {
+      "path": "references/problems/2021B.md",
+      "sha256": "fbf15913ccfdb60a478691e156c2138968fb26aef1dcd84286eb09c0ace42faa"
+    },
+    {
+      "path": "references/problems/2021C.md",
+      "sha256": "38f4c729bff17ae5fad175d0af8f9b9db9f1a578fd3a8f03667ee1a50c5f4aba"
+    },
+    {
+      "path": "references/problems/2022A.md",
+      "sha256": "29b2ba7918c9880df93cbfa01ef8707165837ae7c6ef52386f27449cb9f246a0"
+    },
+    {
+      "path": "references/problems/2022B.md",
+      "sha256": "2ad8451ee2b28ad66230548538dc24c7a57551059fa30733dc6200685400a0f3"
+    },
+    {
+      "path": "references/problems/2022C.md",
+      "sha256": "612d60e3528632bfd921267d92a1ba8842718738f35df33c44d7d2411af7743b"
+    },
+    {
+      "path": "references/problems/2023A.md",
+      "sha256": "430efb49f37dbd680e210b1dac346221053bcdd0cf47e0ff97435868c7b5faa6"
+    },
+    {
+      "path": "references/problems/2023B.md",
+      "sha256": "b7b0fcb46966879e0a2cddb8437ddb8766d583a1c4e001f41be5ff47546383ca"
+    },
+    {
+      "path": "references/problems/2023C.md",
+      "sha256": "73dba8219ac3f89dcbe81df677630b82a2ce7cbe41945d63e3f73c051be95f8c"
+    },
+    {
+      "path": "references/problems/2024A.md",
+      "sha256": "c8eb43b6b7d55a4d4b758cf5391a5d38430abb7082e4cf57a6d7cbb59c55e903"
+    },
+    {
+      "path": "references/problems/2024B.md",
+      "sha256": "3db332f71a3ecd7195906027e4b280400e2e7347c6615d612708953838e27b45"
+    },
+    {
+      "path": "references/problems/2024C.md",
+      "sha256": "e3b80720dc0a1f8d7e5b25fedff1eef356e4a33569aebd94fba8b33255c3b7cc"
+    },
+    {
+      "path": "references/problems/2025A.md",
+      "sha256": "fedabf3373061109e938d5a9f7d1e06962d9e43dcbc4effaca9c7ea0d07d76cd"
+    },
+    {
+      "path": "references/problems/2025B.md",
+      "sha256": "0d94975411ca1e9b5d63738ffbbd0c34432ac025df0cca329e344cb6e2dd44e8"
+    },
+    {
+      "path": "references/problems/2025C.md",
+      "sha256": "838d2e8a1771d77786b8ac83b618887031e558624298c0a74b7a127b2f6c8225"
+    },
+    {
+      "path": "references/review-schema.md",
+      "sha256": "4bc50f09deef3f9f884c2a5d63fad405b99f0bbd740a23804a2bcb2aeb31df39"
+    },
+    {
+      "path": "references/rubric.md",
+      "sha256": "1ccb6cdac7c5ff116f9ba6671fe2f0641b0fcb55c1f40cf02a79f6a33f0f938b"
+    },
+    {
+      "path": "references/sources-methods.json",
+      "sha256": "fd2316a1e47434f164015d851cf0e9fdb402db9a005e578fc39c1cd353f34a29"
+    },
+    {
+      "path": "requirements-extraction.txt",
+      "sha256": "2657301dd241d2d6eee35c6c365023bea4b7f4302f636e881bbd155ca6f7513b"
+    },
+    {
+      "path": "run.ps1",
+      "sha256": "6b0ce46b0fb4ac857840bd8dbeee21cade5679403a3e28e6f22b695027450309"
+    },
+    {
+      "path": "scripts/convert-office.ps1",
+      "sha256": "df850e8cf04b5c2f5acd2f0cca6654de80f4d933598a9aa9b3d15ff2a4c2cc49"
+    },
+    {
+      "path": "scripts/extract.py",
+      "sha256": "bebb952f4d5d02ee923e0864e46b4587832498a8147e0f7e507e1e6e889ccbf2"
+    },
+    {
+      "path": "scripts/review.py",
+      "sha256": "0871979376c8c659a3ca440b61d6f9be2b5f6b3933fed681153883096a19640c"
+    },
+    {
+      "path": "setup-dependencies.ps1",
+      "sha256": "cdcc9e410e994b1978deef20e0bed916ecbe614c4f2c70c4490d7207242f7a70"
+    }
+  ]
+}

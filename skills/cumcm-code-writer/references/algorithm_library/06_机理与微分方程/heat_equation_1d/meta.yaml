@@ -1,0 +1,17 @@
+id: heat_equation_1d
+name_zh: 一维热传导方程
+category: 06_机理与微分方程
+problem_types: 温度扩散与时空演化
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 显式格式需满足稳定性条件r<=0.5
+pitfalls: 违反稳定性条件仍用显式格式
+source: 自写重写;参照 算法写作模板 04 培训资料
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "optimization",
+    "title": "SciPy optimization",
+    "url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+    "locator": "Optimization / Linear programming / MILP",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "regression",
+    "title": "statsmodels Linear Regression",
+    "url": "https://www.statsmodels.org/stable/regression.html",
+    "locator": "Model classes / Examples",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "leakage",
+    "title": "scikit-learn Common pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "locator": "Data leakage / Inconsistent preprocessing",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "forecast",
+    "title": "Forecasting: Principles and Practice",
+    "url": "https://otexts.com/fpp3/tscv.html",
+    "locator": "Time series cross-validation",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "graphs",
+    "title": "NetworkX Algorithms",
+    "url": "https://networkx.org/documentation/stable/reference/algorithms/index.html",
+    "locator": "Shortest Paths / Flow / Matching",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "ahp",
+    "title": "pymcdm Subjective weights",
+    "url": "https://pymcdm.readthedocs.io/en/master/modules/subjective_weights.html",
+    "locator": "2.2.1 AHP; displayed reciprocal matrix",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "weights",
+    "title": "pymcdm Objective weights",
+    "url": "https://pymcdm.readthedocs.io/en/master/modules/objective_weights.html",
+    "locator": "2.1.2 Entropy / CRITIC",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "nsga",
+    "title": "pymoo NSGA-II",
+    "url": "https://pymoo.org/algorithms/moo/nsga2.html",
+    "locator": "Rank and crowding selection",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "ode",
+    "title": "SciPy solve_ivp",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html",
+    "locator": "Parameters method / rtol / atol",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "sensitivity",
+    "title": "SALib Basics",
+    "url": "https://salib.readthedocs.io/en/latest/user_guide/basics.html",
+    "locator": "Sampling / Run model / Analyze",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "composition",
+    "title": "scikit-bio Composition Statistics",
+    "url": "https://scikit.bio/docs/dev/generated/skbio.stats.composition.html",
+    "locator": "clr / ilr / alr and zero replacement",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "yi",
+    "title": "YiFraternity LLM-MM-Agent",
+    "url": "https://github.com/YiFraternity/LLM-MM-Agent",
+    "locator": "README; problem-directed framework",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "hmml",
+    "title": "usail-hkust MM-Agent",
+    "url": "https://github.com/usail-hkust/LLM-MM-Agent",
+    "locator": "README; HMML",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "glm",
+    "title": "statsmodels Generalized Linear Models",
+    "url": "https://www.statsmodels.org/stable/glm.html",
+    "locator": "Technical Documentation; conditional mean and family",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "interpolation",
+    "title": "SciPy Interpolation",
+    "url": "https://docs.scipy.org/doc/scipy/reference/interpolate.html",
+    "locator": "Univariate interpolation / splines",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "normal",
+    "title": "NIST Normal random errors",
+    "url": "https://www.itl.nist.gov/div898/handbook/pmd/section2/pmd214.htm",
+    "locator": "Normality of random errors and inference",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "topsis",
+    "title": "pymcdm API",
+    "url": "https://pymcdm.readthedocs.io/en/master/pymcdm.methods.html",
+    "locator": "TOPSIS",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "dea",
+    "title": "Charnes Cooper Rhodes 1978",
+    "url": "https://doi.org/10.1016/0377-2217(78)90138-8",
+    "locator": "Measuring the efficiency of decision making units",
+    "accessed": null,
+    "status": "打开失败，待运行时寻找可读一手来源",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "grey",
+    "title": "Deng 1982",
+    "url": "https://doi.org/10.1016/S0167-6911(82)80025-X",
+    "locator": "Control problems of grey systems",
+    "accessed": null,
+    "status": "打开失败，待运行时寻找可读一手来源",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "ml",
+    "title": "scikit-learn User Guide",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "locator": "Supervised / Unsupervised learning",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "sim",
+    "title": "SimPy documentation",
+    "url": "https://simpy.readthedocs.io/en/latest/",
+    "locator": "Discrete event simulation",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "robust",
+    "title": "Pyomo PyROS",
+    "url": "https://pyomo.readthedocs.io/en/stable/explanation/solvers/pyros.html",
+    "locator": "Two-stage robust optimization",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "dp",
+    "title": "Sutton Barto Reinforcement Learning",
+    "url": "http://incompleteideas.net/book/the-book-2nd.html",
+    "locator": "Dynamic programming and Markov decision processes",
+    "accessed": null,
+    "status": "打开失败，待运行时寻找可读一手来源",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "pso",
+    "title": "pymoo PSO",
+    "url": "https://pymoo.org/algorithms/soo/pso.html",
+    "locator": "Particle Swarm Optimization",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "ga",
+    "title": "pymoo GA",
+    "url": "https://pymoo.org/algorithms/soo/ga.html",
+    "locator": "Genetic Algorithm",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  },
+  {
+    "id": "bootstrap",
+    "title": "SciPy bootstrap",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+    "locator": "Parameters paired / method",
+    "accessed": "2026-09-09",
+    "status": "已读取",
+    "scope": "方法定义和审查线索；不能替代具体方案逐主张核验"
+  }
+]

@@ -1,0 +1,17 @@
+id: markov_chain
+name_zh: 马尔可夫链预测
+category: 07_随机模拟
+problem_types: 状态转移与份额预测
+family: 随机过程
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, pandas]
+matlab_toolboxes: []
+assumptions: 转移矩阵非负且行和为1
+pitfalls: 转移矩阵未校验且不做检验
+source: 自写重写;本地参照 02 源代码 马尔可夫预测模型
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

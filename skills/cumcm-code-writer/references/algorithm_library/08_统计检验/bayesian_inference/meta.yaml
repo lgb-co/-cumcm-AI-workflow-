@@ -1,0 +1,17 @@
+id: bayesian_inference
+name_zh: 贝叶斯参数估计
+category: 08_统计检验
+problem_types: 小样本参数估计与区间
+family: 统计推断
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy, scipy]
+matlab_toolboxes: []
+assumptions: 先验可解释且共轭结构成立
+pitfalls: 先验拍定且不做敏感性分析
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图

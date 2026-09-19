@@ -1,0 +1,17 @@
+id: system_dynamics
+name_zh: 系统动力学存量流量模型
+category: 06_机理与微分方程
+problem_types: 政策与系统演化仿真
+family: 机理建模
+language:
+  python: python/main.py
+  matlab: matlab/main.m
+python_libs: [numpy]
+matlab_toolboxes: []
+assumptions: 存量流量结构与反馈回路明确
+pitfalls: 步长过大导致欧拉积分失真
+source: 自写重写;方法依据见 references/来源与方法依据.md
+license: self-written
+interface:
+  input: 见脚本 build_demo() 中的演示数据与 solve() 形参
+  output: out/ 下的 CSV 结果表与（如涉及）PNG/PDF 图
