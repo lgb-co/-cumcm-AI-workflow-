@@ -15,7 +15,8 @@ DST = Path(os.environ.get(
 ))
 NAMES = ["cumcm-model-build", "cumcm-model-review", "cumcm-code-writer",
          "cumcm-code-reviewer", "cumcm-paper-writer", "cumcm-fullflow"]
-ALLOWED_TOP = {"SKILL.md", "references", "scripts", "templates", "assets"}
+# 环境配置.json 是 wire_code_env.py 写进去的本机接线（_paths.py 读 SKILL_DIR/环境配置.json），属正常项
+ALLOWED_TOP = {"SKILL.md", "环境配置.json", "references", "scripts", "templates", "assets"}
 
 fail: list[str] = []
 warn: list[str] = []

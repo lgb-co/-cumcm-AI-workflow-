@@ -196,17 +196,29 @@ report: list[str] = []
 problems: list[str] = []
 
 
-def robust_rmtree(path: Path, tries: int = 6, delay: float = 0.6) -> None:
-    """Windows 上目录常被短时占用（索引/杀软/残留 cwd），删除要重试。"""
+def robust_rmtree(path: Path, tries: int = 12, delay: float = 1.0) -> bool:
+    """Windows 上目录会被长时间占用（索引/杀软/某进程把它当 cwd）。
+
+    这种情况下 rmdir 永远失败，重试无意义 —— 返回 False，由 sync_tree 改走原地覆盖。
+    """
     import time
-    for i in range(tries):
+    last: Exception | None = None
+    for _ in range(tries):
         try:
             shutil.rmtree(path)
-            return
+            return True
         except PermissionError as exc:
-            if i == tries - 1:
-                raise SystemExit(f"无法删除被占用的目录，请关闭占用进程后重跑：{path}\n{exc}")
+            last = exc
             time.sleep(delay)
+    print(f"  [提示] 目录被占用无法删除，改为原地覆盖：{path}（{last}）")
+    return False
+
+
+def sync_tree(src: Path, dst: Path) -> None:
+    """把 src 同步到 dst：能删就删干净重建，删不掉就原地覆盖（可能残留上游已删文件）。"""
+    if dst.exists() and not robust_rmtree(dst):
+        print(f"  [提示] {dst.name}/ 用原地覆盖同步，若本次改了文件名请手动清理残留")
+    shutil.copytree(src, dst, dirs_exist_ok=True)
 
 
 def read_raw(path: Path) -> str:
@@ -242,8 +254,8 @@ def reloc(orig: str, root: Path) -> None:
     for name in ROOT_DROP.get(orig, []):
         p = root / name
         if p.is_dir():
-            robust_rmtree(p)
-            report.append(f"  删除 Codex 专有目录 {name}/")
+            if robust_rmtree(p):
+                report.append(f"  删除 Codex 专有目录 {name}/")
         elif p.is_file():
             p.unlink()
             report.append(f"  删除 Codex 专有文件 {name}")
@@ -317,6 +329,94 @@ def patch_fullflow_cli(root: Path) -> None:
                      "Skill 哈希与上游 Codex 包不一致（Hermes 移植改写了 frontmatter，属预期）", ported)''',
             1,
         )
+        old_h = "def _skill_candidates(name: str) -> list[Path]:"
+        assert old_h in text, "helper 注入点"
+        text = text.replace(old_h, '''def _hermes_skills_root() -> Path:
+    """Hermes 移植：技能装在 <hermes>/skills/<分类>/ 下，这里返回 <hermes>/skills。"""
+    return Path(os.environ.get(
+        "HERMES_SKILLS_ROOT",
+        str(Path.home() / "AppData" / "Local" / "hermes" / "skills"),
+    ))
+
+
+def _code_writer_config() -> Path:
+    """Hermes 移植：技能装在分类子目录里，靠技能查找结果定位它的 环境配置.json。"""
+    for candidate in _skill_candidates("cumcm-code-writer"):
+        config = candidate / "环境配置.json"
+        if candidate.is_dir() and config.is_file():
+            return config
+    return Path(".")
+
+
+def _skill_candidates(name: str) -> list[Path]:''', 1)
+        old_hm = '''    hermes_root = Path(os.environ.get("HERMES_SKILLS_ROOT",
+                                       Path.home() / "AppData" / "Local" / "hermes" / "skills"))
+    hermes_alias = {"数学模型建立": "cumcm-model-build", "数学模型评价": "cumcm-model-review"}
+    for _category in sorted(hermes_root.glob("*")):'''
+        assert old_hm in text, "hermes_root 注入点"
+        text = text.replace(old_hm, '''    hermes_alias = {"数学模型建立": "cumcm-model-build", "数学模型评价": "cumcm-model-review"}
+    for _category in sorted(_hermes_skills_root().glob("*")):''', 1)
+
+        old_env = '''def _check_runtime_env(strict: bool = False) -> list[Check]:
+    result: list[Check] = []
+    for rel, label in (("code_env", "代码计算环境"), ("ocr_env", "OCR/PDF 环境")):
+        path = _here() / rel
+        if path.is_dir():
+            result.append(Check(f"env:{label}", "ok", f"{label}已发现", str(path)))
+        else:
+            result.append(Check(f"env:{label}", "fail" if strict else "warn",
+                                f"{label}未安装；相关阶段首次运行可能需补依赖", str(path)))
+    return result'''
+        assert old_env in text, "运行时环境检查注入点"
+        new_env = '''def _resolve_env_dir(rel: str) -> Path | None:
+    """Hermes 移植：环境可装在技能库之外的任意工作区，按 环境变量 → 配置 → 技能库/工具 的顺序找。"""
+    if rel == "code_env":
+        for key in ("CUMCM_CODE_ENV", "CUMCM_PYTHON", "MODELING_PY"):
+            raw = os.environ.get(key)
+            if not raw:
+                continue
+            path = Path(raw).expanduser()
+            if path.is_file():
+                path = path.parent.parent
+            if path.is_dir():
+                return path
+        for config in (_here() / "环境配置.json",
+                       _install_root() / "cumcm-code-writer" / "环境配置.json",
+                       _code_writer_config()):
+            data = _read_json(config) if config.is_file() else None
+            for key in ("code_env", "python"):
+                value = (data or {}).get(key)
+                if isinstance(value, str) and value.strip():
+                    path = Path(value).expanduser()
+                    if path.is_file():
+                        path = path.parent.parent
+                    if path.is_dir():
+                        return path
+    for root in (_here(), _hermes_skills_root() / "工具"):
+        candidate = root / rel
+        if candidate.is_dir():
+            return candidate
+    return None
+
+
+def _check_runtime_env(strict: bool = False) -> list[Check]:
+    result: list[Check] = []
+    for rel, label in (("code_env", "代码计算环境"), ("ocr_env", "OCR/PDF 环境")):
+        path = _resolve_env_dir(rel)
+        if path is not None:
+            result.append(Check(f"env:{label}", "ok", f"{label}已发现", str(path)))
+        else:
+            result.append(Check(f"env:{label}", "fail" if strict else "warn",
+                                f"{label}未安装；相关阶段首次运行可能需补依赖",
+                                f"未找到 {rel}（可用 CUMCM_CODE_ENV 或 环境配置.json 指定）"))
+    return result'''
+        text = text.replace(old_env, new_env, 1)
+
+        old_cfg = '        (_install_root() / "cumcm-code-writer" / "环境配置.json", "代码 Skill 环境配置", ("python", "code_env")),\n'
+        assert old_cfg in text, "环境配置检查注入点"
+        text = text.replace(old_cfg, old_cfg + '        (_code_writer_config(), "代码 Skill 环境配置（Hermes）", ("python", "code_env")),\n', 1)
+        report.append("  CLI 补丁：环境定位支持 CUMCM_CODE_ENV/环境配置.json + Hermes 技能库布局")
+
         old_c = "its skills are split between the local Codex skill\n    directory"
         assert old_c in text, "docstring 宿主指称注入点"
         text = text.replace(old_c, "its skills are split between the local Hermes skill\n    directory", 1)
@@ -355,15 +455,11 @@ def main() -> int:
     for orig, new in RENAME.items():
         src, dst = SRC / orig, DST / new
         print(f"── {orig} -> {new}")
-        if dst.exists():
-            robust_rmtree(dst)
-        shutil.copytree(src, dst)
+        sync_tree(src, dst)
         reloc(orig, dst)
         if orig == "cumcm-fullflow":
             tools_dst = dst / "scripts" / "tools"
-            if tools_dst.exists():
-                robust_rmtree(tools_dst)
-            shutil.copytree(TOOLS, tools_dst)
+            sync_tree(TOOLS, tools_dst)
             report.append(f"  内置总指挥 CLI：tools/ -> scripts/tools/（{len(list(tools_dst.iterdir()))} 项）")
         rewrite_frontmatter(orig, new, dst)
         apply_rules(orig, dst)
